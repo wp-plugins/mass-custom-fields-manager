@@ -3,8 +3,8 @@ Author: Oren Yomtov
 Contributors: Oren Yomtov
 Donate link: http://orenyomtov.info/donate
 Tags: Mass Custom Fields, custom fields, edit custom fields,custom field,custom fields
-Requires at least: 2.3
-Tested up to: 2.7.1
+Requires at least: 2.5
+Tested up to: 2.8
 Stable tag: 0.9
 
 This plugin allows you to manage your posts & pages custom fields.
