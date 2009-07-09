@@ -3,7 +3,7 @@
 Plugin Name: Mass Custom Fields Manager
 Plugin URI: http://orenyomtov.info
 Description: This plugin allows you to manage your posts & pages custom fields.
-Version: 0.9
+Version: 1.0
 Author: Oren Yomtov
 Author URI: http://orenyomtov.info
 */
