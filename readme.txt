@@ -2,10 +2,10 @@
 Author: Oren Yomtov
 Contributors: Oren Yomtov
 Donate link: http://orenyomtov.info/donate
-Tags: Mass Custom Fields, custom fields, edit custom fields,custom field,custom fields
+Tags: Mass Custom Fields, custom fields, edit custom fields, custom field, blogger_, remove custom fields
 Requires at least: 2.5
 Tested up to: 2.8
-Stable tag: 0.9
+Stable tag: 1.0
 
 This plugin allows you to manage your posts & pages custom fields.
 
@@ -14,7 +14,8 @@ This plugin allows you to manage your posts & pages custom fields.
 Mass Custom Fields Manager (MCFM) is a plugin I wrote in order to help people who use WordPress to manage their post's custom fields with ease.
 If you don't want to spend your time editing each and every single post's custom fields to the same value or you want to delete/update specific posts you don't have another tool that let's you do that.
 
-You can choose posts by category,ID,custom field value and more and with a click of a button manage their custom fields.
+You can choose posts by category,ID,custom field value,tags (since v1.0) and more and with a click of a button manage their custom fields.
+You can also choose tags that if a post is saved having that tag, it will automatically get a specific custom field with a specific value (Added in v1.0).
 
 For Support Please visit my blog at <a href="http://orenyomtov.info">Oren Yomtov</a>. You can also view all of my <a href="http://orenyomtov.info/oren/projects/wordpress-plugins">Wordpress Plugins</a> in my blog.
 == Installation ==
@@ -27,4 +28,18 @@ That's it, now you can start managing your custom fields.
 
 == Screenshots ==
 
-1. This is how the plugins interface looks like.
+1. This is how the plugins interface looks like
+2. This is the second part of the plugins interface (added in v1.0)
+
+== Changelog ==
+
+1.0:
+Minor bug fixes
+Added new section from request-
+"Does this apply to past posts only? Or is there a way to specify custom fields for certain posts? For example, I have a thumbnail that I want to apply to my Twitter Update entries automatically." by <a href="http://shibooya.com">MC</a>.
+No longer in beta.
+Search by tags from request-
+"Is there a way to search for posts using tags instead of post ID or category?" by <a href="http://shibooya.com">MC</a>.
+
+0.9:
+First release
