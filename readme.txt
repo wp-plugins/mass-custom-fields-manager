@@ -34,12 +34,12 @@ That's it, now you can start managing your custom fields.
 == Changelog ==
 
 1.0:
-Minor bug fixes
+<p>Minor bug fixes
 Added new section from request-
 "Does this apply to past posts only? Or is there a way to specify custom fields for certain posts? For example, I have a thumbnail that I want to apply to my Twitter Update entries automatically." by <a href="http://shibooya.com">MC</a>.
 No longer in beta.
 Search by tags from request-
-"Is there a way to search for posts using tags instead of post ID or category?" by <a href="http://shibooya.com">MC</a>.
+"Is there a way to search for posts using tags instead of post ID or category?" by <a href="http://shibooya.com">MC</a>.</p>
 
 0.9:
-First release
+<p>First release</p>
