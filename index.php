@@ -303,7 +303,7 @@ function mcfm_actions($links, $file){
 	$this_plugin = plugin_basename(__FILE__);
 	
 	if ( $file == $this_plugin ){
-		$settings_link = '<a href="tools.php?page=mcfm">' . _e('Use') . '</a>';
+		$settings_link = '<a href="tools.php?page=mcfm">' . __('Use') . '</a>';
 		array_unshift($links, $settings_link);
 	}
 	return $links;
