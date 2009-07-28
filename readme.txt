@@ -4,7 +4,7 @@ Contributors: Oren Yomtov
 Donate link: http://orenyomtov.info/donate
 Tags: Mass Custom Fields, custom fields, edit custom fields, custom field, blogger_, remove custom fields
 Requires at least: 2.5
-Tested up to: 2.8
+Tested up to: 2.8.2
 Stable tag: 1.0
 
 This plugin allows you to manage your posts & pages custom fields.
