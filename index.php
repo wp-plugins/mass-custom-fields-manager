@@ -33,7 +33,7 @@ function mcfm_init() {
 	add_filter('plugin_action_links', 'mcfm_actions', 10, 2 );
 
 	add_action('save_post','mcfm_save_post');
-	add_action('wp_footer', 'mcfm_footer');
+	//add_action('wp_footer', 'mcfm_footer');
 }
 
 function mcfm_admin_head() {
@@ -354,11 +354,11 @@ for ($i=0;$i<count($lftag);$i++) {
 
 <a  href="#" onclick="return addMore();"><?php echo _e('New') ?></a><br />
 
-Link <a href="http://orenyomtov.info">me</a> once in 10 page loads in the footer (tiny text)
+<!--Link <a href="http://orenyomtov.info">me</a> once in 10 page loads in the footer (tiny text)
 <select name="mcfm_footer">
 <option value="">Yes :)</option>
 <option value="no" <?php if ( get_option('mcfm_footer')=='no' ) echo 'selected="selected" '?>>No :(</option>
-</select>
+</select>-->
 
 <input type="hidden" name="action" value="update" />
 <input type="hidden" name="page_options" value="mcfm_lftag,mcfm_fname,mcfm_fvalue,mcfm_footer" />
