@@ -3,9 +3,9 @@ Author: Oren Yomtov
 Contributors: Oren Yomtov
 Donate link: http://orenyomtov.info/donate
 Tags: Mass Custom Fields, custom fields, edit custom fields, custom field, blogger_, remove custom fields
-Requires at least: 2.5
-Tested up to: 2.8.2
-Stable tag: 1.0
+Requires at least: 2.7
+Tested up to: 2.8.4
+Stable tag: 1.1
 
 This plugin allows you to manage your posts & pages custom fields.
 
@@ -35,7 +35,7 @@ That's it, now you can start managing your custom fields.
 
 == Changelog ==
 
-<strong>1.0:</strong>
+<strong>1.1:</strong>
 <p>Minor bug fixes<br>
 Added new section from request-<br>
 "Does this apply to past posts only? Or is there a way to specify custom fields for certain posts? For example, I have a thumbnail that I want to apply to my Twitter Update entries automatically." by <a href="http://shibooya.com">MC</a>.<br>
