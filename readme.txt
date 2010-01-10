@@ -4,12 +4,15 @@ Contributors: Oren Yomtov
 Donate link: http://orenyomtov.info/donate
 Tags: Mass Custom Fields, custom fields, edit custom fields, custom field, blogger_, remove custom fields
 Requires at least: 2.7
-Tested up to: 2.8.4
-Stable tag: 1.1
+Tested up to: 2.9.1
+Stable tag: 1.2
 
 This plugin allows you to manage your posts & pages custom fields.
 
 == Description ==
+
+<p><strong>1.2:</strong>
+WordPress 2.9.1 compatible.</p>
 
 <p>
 Mass Custom Fields Manager (MCFM) is a plugin I wrote in order to help people who use WordPress to manage their post's custom fields with ease.<br>
@@ -37,13 +40,16 @@ That's it, now you can start managing your custom fields.
 
 == Changelog ==
 
-<strong>1.1:</strong>
+= 1.2 = 
+*WordPerss 2.9.1 compatible.
+
+= 1.1 =
 <p>Minor bug fixes<br>
-Added new section from request-<br>
+*Added new section from request-<br>
 "Does this apply to past posts only? Or is there a way to specify custom fields for certain posts? For example, I have a thumbnail that I want to apply to my Twitter Update entries automatically." by <a href="http://shibooya.com">MC</a>.<br>
-No longer in beta.<br>
-Search by tags from request-<br>
+*No longer in beta.<br>
+*Search by tags from request-<br>
 "Is there a way to search for posts using tags instead of post ID or category?" by <a href="http://shibooya.com">MC</a>.</p>
 
-<strong>0.9:</strong>
-<p>First release</p>
+= 0.9 =
+*First release
