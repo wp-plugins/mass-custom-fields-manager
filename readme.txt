@@ -1,7 +1,7 @@
 === Mass Custom Fields Manager ===
 Author: Oren Yomtov
 Contributors: Oren Yomtov
-Donate link: http://orenyomtov.info/donate
+Donate link: http://orenyomtov.com/donate
 Tags: Mass Custom Fields, custom fields, edit custom fields, custom field, blogger_, remove custom fields
 Requires at least: 2.7
 Tested up to: 2.9.1
@@ -21,10 +21,10 @@ If you don't want to spend your time editing each and every single post's custom
 You can choose posts by category,ID,custom field value,tags (since v1.0) and more and with a click of a button manage their custom fields.<br>
 You can also choose tags that if a post is saved having that tag, it will automatically get a specific custom field with a specific value (Added in v1.0).
 </p><p>
-For Support Please visit my blog at <a href="http://orenyomtov.info">Oren Yomtov</a>. You can also view all of my <a href="http://orenyomtov.info/oren/projects/wordpress-plugins">Wordpress Plugins</a> in my blog.
+For Support Please visit my blog at <a href="http://orenyomtov.com">Oren Yomtov</a>. You can also view all of my <a href="http://orenyomtov.com/oren/projects/wordpress-plugins">Wordpress Plugins</a> in my blog.
 </p>
 
-<p style="text-align:center"><a href="http://twitter.com/orenyomtov"><img src="http://orenyomtov.info/downloads/twitter.png" title="Follow me on twitter for interesting updates" border="0" /></a></p>
+<p style="text-align:center"><a href="http://twitter.com/orenyomtov"><img src="http://orenyomtov.com/downloads/twitter.png" title="Follow me on twitter for interesting updates" border="0" /></a></p>
 == Installation ==
 
 1. Upload the `mass-custom-fields-manager` directory to the `/wp-content/plugins/` directory

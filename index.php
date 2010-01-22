@@ -1,15 +1,15 @@
 <?php
 /*
 Plugin Name: Mass Custom Fields Manager
-Plugin URI: http://orenyomtov.info
+Plugin URI: http://orenyomtov.com
 Description: This plugin allows you to manage your posts & pages custom fields.
 Version: 1.2
 Author: Oren Yomtov
-Author URI: http://orenyomtov.info
+Author URI: http://orenyomtov.com
 */
 
 /*
-Copyright (C) 2009 Oren Yomtov, orenyomtov.info (thenameisoren AT gmail DOT com)
+Copyright (C) 2009 Oren Yomtov, orenyomtov.com (thenameisoren AT gmail DOT com)
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -33,7 +33,6 @@ function mcfm_init() {
 	add_filter('plugin_action_links', 'mcfm_actions', 10, 2 );
 
 	add_action('save_post','mcfm_save_post');
-	//add_action('wp_footer', 'mcfm_footer');
 }
 
 function mcfm_admin_head() {
@@ -88,7 +87,7 @@ New value<br />
 <input name="new_value" id="new_value" value="' . stripslashes($new_value) . '" class="mcfm_input" size="35"' . ( ($_POST['deletee']=='1')?' disabled="disabled"':'' ) . ' /><br />
 
 <input type="checkbox" name="deletee" id="deletee" onclick="toggleDelete();" value="1"' . $delete . ' /><label for="deletee"> Delete the qualified custom fields?</label><br /><br />
-<script type="text/javascript" src="http://orenyomtov.info/downloads/plugins_inform.php?plugin=mcfm"></script>
+<script type="text/javascript" src="http://orenyomtov.com/downloads/plugins_inform.php?plugin=mcfm"></script>
 
 </div> 
 </div> 
@@ -160,9 +159,9 @@ echo mysql_error();*/
 
 	}
 echo'<br />
-<script type="text/javascript" src="http://orenyomtov.info/downloads/plugins_outform.php?plugin=mcfm"></script>
+<script type="text/javascript" src="http://orenyomtov.com/downloads/plugins_outform.php?plugin=mcfm"></script>
 <p>
-If you want to add custom fields to posts which are <span style="font-weight:bold">created/saved</span> with a specific tag go to <a href="http://orenyomtov.info/wp-admin/options-general.php?page=mcfm">Settings->Mass Custom Fields Manager</a>.
+If you want to add custom fields to posts which are <span style="font-weight:bold">created/saved</span> with a specific tag go to <a href="/wp-admin/options-general.php?page=mcfm">Settings->Mass Custom Fields Manager</a>.
 </p>
 </div></div>';
 }
@@ -322,7 +321,7 @@ These filters only apply to posts when they are saved - this will not work for p
 e.g.<br />
 If you that every post that is created with the "twitter update" tag, will have the custom field "thumbnail" with the value of "twit.png" use the following settings:<br />
 <img src="<?php echo bloginfo('wpurl'); ?>/wp-content/plugins/mass-custom-fields-manager/screenshot-2.png" style="border:3px double brown" /><br />
-Note:If you want to manage custom fields of posts that exist, go to <a href="http://orenyomtov.info/wp-admin/tools.php?page=mcfm">Tools->Mass Custom Fields Manager</a>.
+Note:If you want to manage custom fields of posts that exist, go to <a href="/wp-admin/tools.php?page=mcfm">Tools->Mass Custom Fields Manager</a>.
 </p>
 
 <form method="post" action="options.php">
@@ -354,22 +353,16 @@ for ($i=0;$i<count($lftag);$i++) {
 
 <a  href="#" onclick="return addMore();"><?php echo _e('New') ?></a><br />
 
-<!--Link <a href="http://orenyomtov.info">me</a> once in 10 page loads in the footer (tiny text)
-<select name="mcfm_footer">
-<option value="">Yes :)</option>
-<option value="no" <?php if ( get_option('mcfm_footer')=='no' ) echo 'selected="selected" '?>>No :(</option>
-</select>-->
-
 <input type="hidden" name="action" value="update" />
 <input type="hidden" name="page_options" value="mcfm_lftag,mcfm_fname,mcfm_fvalue,mcfm_footer" />
 
 <p class="submit">
 <input type="submit" class="button-primary" value="<?php _e('Save Changes') ?>" />
 </p>
-<script type="text/javascript" src="http://orenyomtov.info/downloads/plugins_inform.php?plugin=peb"></script> 
+<script type="text/javascript" src="http://orenyomtov.com/downloads/plugins_inform.php?plugin=peb"></script> 
 </form>
 </div>
-<script type="text/javascript" src="http://orenyomtov.info/downloads/plugins_outform.php?plugin=peb"></script> 
+<script type="text/javascript" src="http://orenyomtov.com/downloads/plugins_outform.php?plugin=peb"></script> 
 <?php
 }
 
@@ -389,20 +382,5 @@ function mcfm_save_post($id) {
 		for ($i=0;$i<count($lftag);$i++)
 			if ($tag->name==$lftag[$i])
 				update_post_meta($id,$fname[$i],$fvalue[$i]);
-}
-
-function mcfm_footer() {
-	$title=array('WordPress Plugin Delveloper','Oren Yomtov','Custom Fields WordPress Plugin','WordPress SEO');
-
-	$i=(int)get_option('mcfm_counter');
-	if ($i==9)
-		$i=1;
-
-	if ( get_option('mcfm_footer')=='' )
-		if ( $i=='7' )
-			echo '<p style="text-align:center"><a href="http://orenyomtov.info" style="color:#969696;font-size:.7em" title="' . $title[rand(0,3)] . '">' . $title[rand(0,3)] . '</a></p>';
-
-	$i++;
-	update_option('mcfm_counter',$i);
 }
 ?>
