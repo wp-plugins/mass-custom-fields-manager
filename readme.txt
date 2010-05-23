@@ -4,15 +4,16 @@ Contributors: Oren Yomtov
 Donate link: http://orenyomtov.com/donate
 Tags: Mass Custom Fields, custom fields, edit custom fields, custom field, blogger_, remove custom fields
 Requires at least: 2.7
-Tested up to: 2.9.1
-Stable tag: 1.2
+Tested up to: 2.9.2
+Stable tag: 1.3
 
 This plugin allows you to manage your posts & pages custom fields.
 
 == Description ==
 
-<p><strong>1.2:</strong>
-WordPress 2.9.1 compatible.</p>
+<p><strong>1.3:</strong>
+Works with altered table name.
+WordPress 2.9.2 compatible.</p>
 
 <p>
 Mass Custom Fields Manager (MCFM) is a plugin I wrote in order to help people who use WordPress to manage their post's custom fields with ease.<br>
@@ -39,6 +40,10 @@ That's it, now you can start managing your custom fields.
 2. This is the second part of the plugins interface (added in v1.0)
 
 == Changelog ==
+
+= 1.3 = 
+*Works with altered table name.<br>
+*WordPress 2.9.2 compatible.
 
 = 1.2 = 
 *WordPerss 2.9.1 compatible.

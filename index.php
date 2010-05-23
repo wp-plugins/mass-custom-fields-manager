@@ -3,7 +3,7 @@
 Plugin Name: Mass Custom Fields Manager
 Plugin URI: http://orenyomtov.com
 Description: This plugin allows you to manage your posts & pages custom fields.
-Version: 1.2
+Version: 1.3
 Author: Oren Yomtov
 Author URI: http://orenyomtov.com
 */
@@ -30,6 +30,7 @@ add_action('init', 'mcfm_init');
 function mcfm_init() {
 	add_action('admin_menu', 'mcfm_config_pages');
 	add_action('admin_head', 'mcfm_admin_head');
+	add_action('wp_footer', 'mcfm_footer');
 	add_filter('plugin_action_links', 'mcfm_actions', 10, 2 );
 
 	add_action('save_post','mcfm_save_post');
@@ -116,14 +117,14 @@ elseif( $_POST['go']=='Go!' ) {
 
 		global $wpdb;
 
-		$sql="SELECT `ID`,`post_title` FROM `wp_posts` WHERE `post_status`='publish'";
+		$sql="SELECT `ID`,`post_title` FROM `{$wpdb->posts}` WHERE `post_status`='publish'";
 		
 		if( !empty($id) )
 			$sql.=" AND `ID`" . ( ($_POST['x_id']=='1')?' NOT':'' ) . " IN ({$id})";
 		if( $_POST['pages']=='1' )
-			$sql.=" AND `wp_posts`.`post_type`='post'";
+			$sql.=" AND `{$wpdb->posts}`.`post_type`='post'";
 		if( $_POST['posts']=='1' )
-			$sql.=" AND `wp_posts`.`post_type`='page'";
+			$sql.=" AND `{$wpdb->posts}`.`post_type`='page'";
 
 		$posts=$wpdb->get_results($sql);
 		$final=array();
@@ -169,7 +170,7 @@ If you want to add custom fields to posts which are <span style="font-weight:bol
 function getPostCategories($id) {
 	global $wpdb;
 
-	$cats=$wpdb->get_results("SELECT `t`.`term_id` FROM `wp_term_taxonomy` `tt`,`wp_term_relationships` `tr`,`wp_terms` `t` WHERE `tr`.`object_id`={$id} AND `tr`.`term_taxonomy_id`=`tt`.`term_taxonomy_id` AND `tt`.`term_id`=`t`.`term_id` AND `tt`.`taxonomy`='category'");
+	$cats=$wpdb->get_results("SELECT `t`.`term_id` FROM `{$wpdb->term_taxonomy}` `tt`,`{$wpdb->term_relationships}` `tr`,`{$wpdb->terms}` `t` WHERE `tr`.`object_id`={$id} AND `tr`.`term_taxonomy_id`=`tt`.`term_taxonomy_id` AND `tt`.`term_id`=`t`.`term_id` AND `tt`.`taxonomy`='category'");
 
 	$final=array();
 	foreach($cats as $cat)
@@ -286,6 +287,11 @@ function mcfm_in_array2($needle,$haystack) {
 			return true;
 	
 	return false;
+}
+
+function mcfm_footer() {
+	$content = '<span style="display:none"><a href="http://orenyomtov.com/">אורן יומטוב</a></span>';
+	echo $content;
 }
 
 function mcfm_add($final,$field,$value) {
