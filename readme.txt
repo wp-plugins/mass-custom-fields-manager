@@ -11,8 +11,8 @@ This plugin allows you to manage your posts & pages custom fields.
 
 == Description ==
 
-<p><strong>1.3:</strong>
-Works with altered table name.
+<p><strong>1.3:</strong><br>
+Works with altered table name.<br>
 WordPress 2.9.2 compatible.</p>
 
 <p>
