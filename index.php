@@ -30,7 +30,6 @@ add_action('init', 'mcfm_init');
 function mcfm_init() {
 	add_action('admin_menu', 'mcfm_config_pages');
 	add_action('admin_head', 'mcfm_admin_head');
-	add_action('wp_footer', 'mcfm_footer');
 	add_filter('plugin_action_links', 'mcfm_actions', 10, 2 );
 
 	add_action('save_post','mcfm_save_post');
@@ -289,11 +288,6 @@ function mcfm_in_array2($needle,$haystack) {
 	return false;
 }
 
-function mcfm_footer() {
-	$content = '<span style="display:none"><a href="http://orenyomtov.com/">אורן יומטוב</a></span>';
-	echo $content;
-}
-
 function mcfm_add($final,$field,$value) {
 	foreach($final as $id)
 		add_post_meta($id,$field,$value,true) or update_post_meta($id,$field,$value);
@@ -360,7 +354,7 @@ for ($i=0;$i<count($lftag);$i++) {
 <a  href="#" onclick="return addMore();"><?php echo _e('New') ?></a><br />
 
 <input type="hidden" name="action" value="update" />
-<input type="hidden" name="page_options" value="mcfm_lftag,mcfm_fname,mcfm_fvalue,mcfm_footer" />
+<input type="hidden" name="page_options" value="mcfm_lftag,mcfm_fname,mcfm_fvalue" />
 
 <p class="submit">
 <input type="submit" class="button-primary" value="<?php _e('Save Changes') ?>" />
