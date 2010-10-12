@@ -5,13 +5,13 @@ Donate link: http://orenyomtov.com/donate
 Tags: Mass Custom Fields, custom fields, edit custom fields, custom field, blogger_, remove custom fields
 Requires at least: 2.7
 Tested up to: 2.9.2
-Stable tag: 1.3
+Stable tag: 1.4
 
 This plugin allows you to manage your posts & pages custom fields.
 
 == Description ==
 
-<p><strong>1.3:</strong><br>
+<p><strong>1.4:</strong><br>
 Works with altered table name.<br>
 WordPress 2.9.2 compatible.</p>
 
@@ -41,7 +41,7 @@ That's it, now you can start managing your custom fields.
 
 == Changelog ==
 
-= 1.3 = 
+= 1.4 = 
 *Works with altered table name.<br>
 *WordPress 2.9.2 compatible.
 
