@@ -23,6 +23,8 @@ You can choose posts by category,ID,custom field value,tags (since v1.0) and mor
 You can also choose tags that if a post is saved having that tag, it will automatically get a specific custom field with a specific value (Added in v1.0).
 </p>
 
+<a href="http://orenyomtov.com">Yomtov</a>.
+
 <a href="http://twitter.com/orenyomtov">You should follow me on twitter</a>
 == Installation ==
 
