@@ -3,13 +3,13 @@
 Plugin Name: Mass Custom Fields Manager
 Plugin URI: http://orenyomtov.com
 Description: This plugin allows you to manage your posts & pages custom fields.
-Version: 1.4
+Version: 1.5
 Author: Oren Yomtov
 Author URI: http://orenyomtov.com
 */
 
 /*
-Copyright (C) 2009 Oren Yomtov, orenyomtov.com (thenameisoren AT gmail DOT com)
+Copyright (C) 2011 Oren Yomtov, orenyomtov.com (thenameisoren AT gmail DOT com)
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -73,8 +73,6 @@ echo '
 <div class="inside"> 
 
 <input type="checkbox" name="empty" id="empty" value="1"' . $empty . ' /><label for="empty"> Field must be empty/not exist?</label><br /><br />
-<input type="checkbox" name="pages" id="pages" value="1"' . $pages . ' /><label for="pages"> Select all posts</label><br /><br />
-<input type="checkbox" name="posts" id="posts" value="1"' . $posts . ' /><label for="posts"> Select all pages</label><br /><br />
 
 Current field value must be (Seperated by commas)<br />
 <textarea name="value" id="value" style="width:99%;height:205px" class="mcfm_input">' . stripslashes($value) . '</textarea><br />
@@ -120,10 +118,6 @@ elseif( $_POST['go']=='Go!' ) {
 		
 		if( !empty($id) )
 			$sql.=" AND `ID`" . ( ($_POST['x_id']=='1')?' NOT':'' ) . " IN ({$id})";
-		if( $_POST['pages']=='1' )
-			$sql.=" AND `{$wpdb->posts}`.`post_type`='post'";
-		if( $_POST['posts']=='1' )
-			$sql.=" AND `{$wpdb->posts}`.`post_type`='page'";
 
 		$posts=$wpdb->get_results($sql);
 		$final=array();
