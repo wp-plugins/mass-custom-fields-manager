@@ -25,7 +25,7 @@ You can also choose tags that if a post is saved having that tag, it will automa
 
 <a href="http://orenyomtov.com">Yomtov</a>.
 
-<a href="http://twitter.com/orenyomtov">You should follow me on twitter</a>
+<a href="http://twitter.com/orenyomtov">You should follow me on twitter</a>.
 == Installation ==
 
 1. Upload the `mass-custom-fields-manager` directory to the `/wp-content/plugins/` directory
